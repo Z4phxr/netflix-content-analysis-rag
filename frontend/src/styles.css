@@ -51,6 +51,14 @@ h1 {
   resize: vertical;
 }
 
+.query-form select {
+  width: fit-content;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.55rem 0.7rem;
+  background: #ffffff;
+}
+
 .query-form button {
   width: fit-content;
   background: #0f172a;
@@ -72,6 +80,17 @@ h1 {
   border-radius: 10px;
   padding: 1rem;
   background: #f8fafc;
+}
+
+.mode-chip {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  background: #e2e8f0;
+  color: #0f172a;
+  font-size: 0.82rem;
 }
 
 .response-card.error {

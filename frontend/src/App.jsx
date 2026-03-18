@@ -11,7 +11,9 @@ function App() {
         <h1>Netflix Content Analysis</h1>
         <p className="subtitle">Query the RAG service for contextual insights.</p>
         <QueryForm onSubmit={runQuery} loading={loading} />
-        <ResponseCard loading={loading} error={error} result={result} />
+        <div style={{ marginTop: '1rem' }}>
+          <ResponseCard loading={loading} error={error} result={result} />
+        </div>
       </section>
     </main>
   )

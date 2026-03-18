@@ -6,12 +6,12 @@ export function useRagQuery() {
   const [error, setError] = useState('')
   const [result, setResult] = useState(null)
 
-  const runQuery = async (question) => {
+  const runQuery = async ({ question, retrievalMode }) => {
     setLoading(true)
     setError('')
 
     try {
-      const data = await queryRag(question)
+      const data = await queryRag(question, retrievalMode)
       setResult(data)
     } catch (err) {
       setError(err.message || 'Unexpected error while querying API')
