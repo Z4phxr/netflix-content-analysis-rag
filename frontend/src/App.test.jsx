@@ -24,7 +24,7 @@ describe('App RAG query flow', () => {
     await waitFor(() => {
       expect(screen.getByText('Example answer')).toBeInTheDocument()
     })
-    expect(screen.getByText(/Retrieval mode used: faiss/i)).toBeInTheDocument()
+    expect(screen.getByText(/Retrieval:\s*faiss/i)).toBeInTheDocument()
     expect(screen.getByText(/Model: gpt-4o-mini/i)).toBeInTheDocument()
     expect(screen.getByText(/Latency: 18.2 ms/i)).toBeInTheDocument()
   })
